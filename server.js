@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect MongoDB
-mongoose.connect("mongodb://localhost:27017/testdb");
+mongoose.connect("mongodb+srv://bca:bca@cluster0.foomeay.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 // User Schema
 const userSchema = new mongoose.Schema({
